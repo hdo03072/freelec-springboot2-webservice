@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db7f3a8b-f3b7-4b7e-92c2-cf917016d491" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/BaseTimeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/dto/PostsListResponseDto.java" afterDir="false" />
+    <list default="true" id="db7f3a8b-f3b7-4b7e-92c2-cf917016d491" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/CustomOAuth2UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/dto/OAuthAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/dto/SessionUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/user/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/user/UserRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/footer.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/header.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-save.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-update.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jojoldu/book/springboot/web/IndexControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/posts/Posts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/posts/PostsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/posts/PostsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/service/posts/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/service/posts/PostsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/PostsApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/PostsApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoldu/book/springboot/domain/posts/PostsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoldu/book/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +67,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JavaScript File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -94,11 +87,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\hsLee\practice\freelec-springboot2-webservice\src\main\java\com\jojoldu\book\springboot\domain" />
       <recent name="C:\hsLee\practice\freelec-springboot2-webservice\src\main\resources\templates" />
     </key>
   </component>
@@ -241,7 +235,7 @@
       <updated>1627001273254</updated>
       <workItem from="1627001277422" duration="1950000" />
       <workItem from="1627003266687" duration="10039000" />
-      <workItem from="1627018302211" duration="7504000" />
+      <workItem from="1627018302211" duration="11262000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1627002473427</created>
@@ -271,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627018203167</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1">
+      <created>1627026770918</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627026770918</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
