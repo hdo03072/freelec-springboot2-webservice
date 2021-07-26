@@ -2,25 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db7f3a8b-f3b7-4b7e-92c2-cf917016d491" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/CustomOAuth2UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/dto/OAuthAttributes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/dto/SessionUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/user/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/JpaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/LoginUserArgumentResolver.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/dto/OAuthAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/dto/OAuthAttributes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoldu/book/springboot/web/HelloControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoldu/book/springboot/web/HelloControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoldu/book/springboot/web/PostsApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoldu/book/springboot/web/PostsApiControllerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@freelec-springboot2-webservice.cqwacy7ycrhg.ap-northeast-2.rds.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@freelec-springboot2-webservice.cqwacy7ycrhg.ap-northeast-2.rds.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@freelec-springboot2-webservice.cqwacy7ycrhg.ap-northeast-2.rds.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="freelec_springboot2_webservice: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@freelec-springboot2-webservice.cqwacy7ycrhg.ap-northeast-2.rds.amazonaws.com [2]" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@freelec-springboot2-webservice.cqwacy7ycrhg.ap-northeast-2.rds.amazonaws.com [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@freelec-springboot2-webservice.cqwacy7ycrhg.ap-northeast-2.rds.amazonaws.com [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="freelec_springboot2_webservice: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -49,13 +96,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="freelec-springboot2-webservice" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="freelec-springboot2-webservice" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -79,6 +120,7 @@
   <component name="ProjectId" id="1vh52eLA8lWdfiO4UP55hoOeCEd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -88,6 +130,9 @@
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
@@ -108,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Gradle.freelec-springboot2-webservice [test]">
     <configuration name="IndexControllerTest.메인페이지_로딩" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -187,7 +232,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="freelec-springboot2-webservice [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="freelec-springboot2-webservice [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -198,7 +243,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -215,13 +260,42 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.freelec-springboot2-webservice [test]" />
         <item itemvalue="Gradle.IndexControllerTest.메인페이지_로딩" />
         <item itemvalue="Gradle.PostsRepositoryTest.BaseTimeEntity_등록" />
         <item itemvalue="Gradle.freelec-springboot2-webservice [bootRun]" />
         <item itemvalue="Gradle.freelec-springboot2-webservice [build]" />
-        <item itemvalue="Gradle.freelec-springboot2-webservice [clean]" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ac63e935" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ac63e935" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@df4de8f" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b1163f7f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b1163f7f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@5262987a" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -235,7 +309,9 @@
       <updated>1627001273254</updated>
       <workItem from="1627001277422" duration="1950000" />
       <workItem from="1627003266687" duration="10039000" />
-      <workItem from="1627018302211" duration="11262000" />
+      <workItem from="1627018302211" duration="11287000" />
+      <workItem from="1627259295074" duration="5749000" />
+      <workItem from="1627273588356" duration="4635000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1627002473427</created>
@@ -272,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627026770918</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1">
+      <created>1627030866475</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627030866475</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
