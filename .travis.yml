@@ -14,43 +14,43 @@ cache:
     - '$HOME/.gradle'
 
 before_install:
-    #  gradle 버전 변경
-    - sudo wget https://services.gradle.org/distributions/gradle-4.10.2-bin.zip
-    - sudo unzip -qq gradle-4.10.2-bin.zip
-    - export GRADLE_HOME=$PWD/gradle-4.10.2
-    - export PATH=$GRADLE_HOME/bin:$PATH
-    - gradle -version
-    - gradle wrap
-    - chmod +x ./gradlew  # gradlew 실행 권한 부여 : Permission denied 에러 예방
+  #  gradle 버전 변경
+  - sudo wget https://services.gradle.org/distributions/gradle-4.10.2-bin.zip
+  - sudo unzip -qq gradle-4.10.2-bin.zip
+  - export GRADLE_HOME=$PWD/gradle-4.10.2
+  - export PATH=$GRADLE_HOME/bin:$PATH
+  - gradle -version
+  - gradle wrap
+  - chmod +x ./gradlew  # gradlew 실행 권한 부여 : Permission denied 에러 예방
 
 script: "./gradlew clean build"
 
 before_deploy:
-    - zip -r freelec-springboot2-webservice *
-    - mkdir -p deploy
-    - mv freelec-springboot2-webservice.zip deploy/freelec-springboot2-webservice.zip
+  - zip -r freelec-springboot2-webservice *
+  - mkdir -p deploy
+  - mv freelec-springboot2-webservice.zip deploy/freelec-springboot2-webservice.zip
 
 deploy:
-    - provider: s3
-      access_key_id: $AWS_ACCESS_KEY #Travis repo setting에 설정된 값
-      secret_access_key: $AWS_SECRET_KEY #Travis repo setting에 설정된 값
-      bucket: freelec-springboot-build3 #s3버킷
-      region: ap-northeast-2
-      skip_cleanup: true
-      acl: private # zip 파일 접근을 private으로
-      local_dir: deploy #before_deploy에서 생성한 디렉토리
-      wait_until-deployed: true
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY #Travis repo setting에 설정된 값
+    secret_access_key: $AWS_SECRET_KEY #Travis repo setting에 설정된 값
+    bucket: freelec-springboot-build3 #s3버킷
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl: private # zip 파일 접근을 private으로
+    local_dir: deploy #before_deploy에서 생성한 디렉토리
+    wait_until-deployed: true
 
-    - provider: codedeploy
-      access_key_id: $AWS_ACCESS_KEY
-      secret_access_key: $AWS_SECRET_KEY
-      bucket: freelec-springboot-build3
-      key: freelec-springboot2-webservice.zip
-      bundle_type: zip
-      application: springboot-webservice-project
-      deployment_group: freelec-springboot2-webservice-group
-      region: ap-northeast-2
-      wait-until-deployed: true
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: freelec-springboot-build3
+    key: freelec-springboot2-webservice.zip
+    bundle_type: zip
+    application: springboot-webservice-project
+    deployment_group: freelec-springboot2-webservice-group
+    region: ap-northeast-2
+    wait-until-deployed: true
 
 # CI 실행 완료시 메일로 알람
 notifications:
