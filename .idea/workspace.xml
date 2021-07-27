@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db7f3a8b-f3b7-4b7e-92c2-cf917016d491" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="db7f3a8b-f3b7-4b7e-92c2-cf917016d491" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +288,7 @@
       <workItem from="1627259295074" duration="5749000" />
       <workItem from="1627273588356" duration="4635000" />
       <workItem from="1627280920378" duration="7983000" />
-      <workItem from="1627345888782" duration="11365000" />
+      <workItem from="1627345888782" duration="11734000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1627002473427</created>
@@ -456,7 +451,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627359601192</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="1111112222">
+      <created>1627360503891</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1627360503891</updated>
+    </task>
+    <task id="LOCAL-00025" summary="3">
+      <created>1627360599294</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1627360599294</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +491,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="11111" />
     <MESSAGE value="1111112222" />
-    <option name="LAST_COMMIT_MESSAGE" value="1111112222" />
+    <MESSAGE value="3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -491,11 +501,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/config/auth/dto/OAuthAttributes.java</url>
           <line>47</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/jojoldu/book/springboot/web/IndexControllerTest.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/jojoldu/book/springboot/web/PostsApiControllerTest.java</url>
