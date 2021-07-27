@@ -47,7 +47,7 @@ deploy:
       bucket: freelec-springboot-build3
       key: freelec-springboot2-webservice.zip
       bundle_type: zip
-      application: springboot-webservice-project
+      application: springboot-webservice-project-hgjhjhjkhjjh
       deployment_group: freelec-springboot2-webservice-group
       region: ap-northeast-2
       wait-until-deployed: true
