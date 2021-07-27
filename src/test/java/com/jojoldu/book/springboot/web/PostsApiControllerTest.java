@@ -57,12 +57,12 @@ public class PostsApiControllerTest {
 
     @After
     public void tearDown() throws Exception {
-        postsRepository.deleteAll();;
+        postsRepository.deleteAll();
     }
 
     @Test
-    @WithMockUser(roles = "USER")
-    public void posts_등록된다() throws Exception {
+    @WithMockUser(roles="USER")
+    public void Posts_등록된다() throws Exception {
         //given
         String title = "title";
         String content = "content";
@@ -87,7 +87,7 @@ public class PostsApiControllerTest {
     }
 
     @Test
-    @WithMockUser(roles = "USER")
+    @WithMockUser(roles="USER")
     public void Posts_수정된다() throws Exception {
         //given
         Posts savedPosts = postsRepository.save(Posts.builder()
