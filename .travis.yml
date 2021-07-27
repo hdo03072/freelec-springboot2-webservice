@@ -15,7 +15,12 @@ cache:
 
 before_install:
     #  gradle 버전 변경
-    - gradlew wrapper --gradle-version 4.10.2
+    - sudo wget https://services.gradle.org/distributions/gradle-4.10.2-bin.zip
+    - sudo unzip -qq gradle-4.10.2-bin.zip
+    - export GRADLE_HOME=$PWD/gradle-4.10.2
+    - export PATH=$GRADLE_HOME/bin:$PATH
+    - gradle -version
+    - gradle wrap
     - chmod +x ./gradlew  # gradlew 실행 권한 부여 : Permission denied 에러 예방
 
 script: "./gradlew clean build"
